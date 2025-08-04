@@ -1015,7 +1015,7 @@ a {
 .saved-lives-title {
   font-size: 2.5rem;
   font-weight: 700;
-  margin-bottom: 1.5rem;
+  margin-bottom: 1rem;
   line-height: 1.2;
 }
 
@@ -1024,7 +1024,7 @@ a {
   font-weight: 400;
   line-height: 1.6;
   max-width: 343px;
-  margin-bottom: 2rem;
+  margin-bottom: 1.5rem;
 }
 
 .share-story-btn {
@@ -1205,8 +1205,9 @@ a {
 /* Footer Styles */
 .footer-section {
   background: #ffffff;
-  padding: 0;
-  margin-top: 4rem;
+  padding: 20px 0 0 0;
+  border-radius: 20px;
+  margin-top: 2rem;
 }
 
 /* Top Buttons */
@@ -1217,10 +1218,11 @@ a {
 .plan-visit-btn {
   background: #2e2320;
   border: none;
-  padding: 0.75rem 1.5rem;
-  font-weight: 600;
-  font-size: 0.9rem;
-  border-radius: 6px;
+  padding: 10px 16px;
+  font-weight: 700;
+  font-size: 16px;
+  border-radius: 8px;
+  color: #ffffff;
   transition: all 0.3s ease;
 }
 
@@ -1233,10 +1235,10 @@ a {
 .login-btn {
   border: 1px solid #2e2320;
   color: #2e2320;
-  padding: 0.75rem 1.5rem;
-  font-weight: 600;
-  font-size: 0.9rem;
-  border-radius: 6px;
+  padding: 10px 16px;
+  font-weight: 700;
+  font-size: 16px;
+  border-radius: 8px;
   transition: all 0.3s ease;
 }
 
@@ -1270,15 +1272,15 @@ a {
 }
 
 .footer-contact .address {
-  font-size: 0.9rem;
-  color: #6c757d;
+  font-size: 14px;
+  color: #2e2e2e;
   line-height: 1.5;
   margin-bottom: 0.5rem;
 }
 
 .footer-contact .phone {
-  font-size: 0.9rem;
-  color: #6c757d;
+  font-size: 14px;
+  color: #2e2e2e;
   margin: 0;
 }
 
@@ -1289,8 +1291,8 @@ a {
 }
 
 .social-icon {
-  width: 40px;
-  height: 40px;
+  width: 30px;
+  height: 30px;
   display: flex;
   transition: all 0.3s ease;
 }
@@ -1306,9 +1308,9 @@ a {
 }
 
 .footer-section-title {
-  font-size: 1rem;
+  font-size: 16px;
   font-weight: 700;
-  color: #2c2c2c;
+  color: #828282;
   margin-bottom: 1.5rem;
   letter-spacing: 1px;
 }
@@ -1324,9 +1326,10 @@ a {
 }
 
 .footer-link-list a {
-  color: #6c757d;
+  color: #2e2e2e;
   text-decoration: none;
-  font-size: 0.9rem;
+  font-size: 14px;
+  font-weight: 400;
   transition: all 0.3s ease;
   position: relative;
 }
@@ -1356,8 +1359,8 @@ a {
 }
 
 .copyright-text {
-  font-size: 0.85rem;
-  color: #333333;
+  font-size: 13px;
+  color: #828282;
   margin: 0;
   font-weight: 400;
 }
@@ -1365,7 +1368,7 @@ a {
 .legal-link {
   color: #ed4b1e;
   text-decoration: none;
-  font-weight: 500;
+  font-weight: 400;
   transition: all 0.3s ease;
 }
 
