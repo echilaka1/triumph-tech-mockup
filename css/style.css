@@ -1277,7 +1277,7 @@ html {
 
 /* Main Footer Content */
 .footer-main {
-  padding: 4rem 0;
+  padding: 1rem 0;
 }
 
 /* Footer Brand Section */
@@ -1319,25 +1319,12 @@ html {
 .social-icon {
   width: 40px;
   height: 40px;
-  border: 1px solid #6c757d;
-  border-radius: 50%;
   display: flex;
-  align-items: center;
-  justify-content: center;
-  color: #6c757d;
-  text-decoration: none;
   transition: all 0.3s ease;
 }
 
 .social-icon:hover {
-  background: #6c757d;
-  color: white;
   transform: translateY(-3px);
-  box-shadow: 0 4px 12px rgba(108, 117, 125, 0.3);
-}
-
-.social-icon i {
-  font-size: 1rem;
 }
 
 /* Footer Links */
@@ -1393,13 +1380,7 @@ html {
 
 /* Footer Bottom */
 .footer-bottom {
-  padding: 2rem 0;
-  border-top: 1px solid #e9ecef;
-  background: #f8f9fa;
-}
-
-.footer-copyright {
-  text-align: center;
+  padding: 1rem 0 0.5rem 0;
 }
 
 .copyright-text {
@@ -1410,14 +1391,14 @@ html {
 }
 
 .legal-link {
-  color: #eb3300;
+  color: #ed4b1e;
   text-decoration: none;
   font-weight: 500;
   transition: all 0.3s ease;
 }
 
 .legal-link:hover {
-  color: #d42e00;
+  color: #ed4b1e;
   text-decoration: underline;
 }
 
