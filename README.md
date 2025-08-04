@@ -29,7 +29,7 @@ triumph-mockup/
 └── README.md           # Project documentation
 ```
 
-## 🚀 Getting Started
+## Getting Started
 
 ### Prerequisites
 
@@ -48,12 +48,12 @@ triumph-mockup/
    npx serve .
    ```
 
-## 🎯 Requirements Met
+## Requirements Met
 
-✅ **Bootstrap Framework**: Grid system and utility classes implemented
-✅ **HTML/CSS Structure**: Semantic HTML5 with custom CSS styling
-✅ **Animated Transitions**: CSS animations and hover effects
-✅ **Slider Library**: Swiper.js integrated and ready for use
-✅ **Full Responsiveness**: Media queries and Bootstrap responsive utilities
+**Bootstrap Framework**: Grid system and utility classes implemented
+**HTML/CSS Structure**: Semantic HTML5 with custom CSS styling
+**Animated Transitions**: CSS animations and hover effects
+**Slider Library**: Swiper.js integrated and ready for use
+**Full Responsiveness**: Media queries and Bootstrap responsive utilities
 
 ---
