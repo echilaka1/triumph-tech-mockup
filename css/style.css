@@ -346,6 +346,10 @@ a {
     display: none;
   }
 
+  .hamburger-icon {
+    display: none;
+  }
+
   .hero-section {
     padding-top: 120px;
     min-height: 140vh;
@@ -1185,7 +1189,7 @@ a {
   }
 
   .small-card .testimonial-image {
-    height: 120px;
+    height: 250px;
   }
 
   .testimonial-title-link {
@@ -1208,7 +1212,7 @@ a {
   }
 
   .small-card .testimonial-image {
-    height: 150px;
+    height: 200px;
   }
 
   .testimonial-title-link {
