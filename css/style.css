@@ -340,33 +340,68 @@ a {
 }
 
 @media (max-width: 768px) {
+  .hero-section {
+    padding-top: 120px;
+    min-height: 140vh;
+    position: relative;
+  }
+
+  .hero-content {
+    margin-top: 0;
+    padding: 0 1rem;
+    position: relative;
+    z-index: 2;
+  }
+
   .hero-title {
-    font-size: 2.5rem;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    line-height: 1.2;
   }
 
   .hero-subtitle {
     font-size: 1rem;
+    margin-bottom: 2rem;
+    line-height: 1.4;
   }
 
   .hero-buttons {
     flex-direction: column;
     align-items: center;
+    gap: 1rem;
+    margin-bottom: 4rem;
   }
 
   .hero-buttons .btn {
     width: 100%;
-    max-width: 250px;
+    max-width: 280px;
+    padding: 12px 24px;
+    font-size: 16px;
+  }
+
+  .hero-bottom-info {
+    position: absolute;
+    bottom: 2rem;
+    left: 0;
+    right: 0;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+    z-index: 3;
   }
 
   .service-countdown {
     flex-direction: column;
     gap: 0.5rem;
     text-align: center;
+    order: 2;
+    margin-bottom: 1rem;
   }
 
   .social-links {
     justify-content: center;
-    margin-top: 1rem;
+    margin-top: 0;
+    order: 1;
   }
 
   .logo-text {
@@ -375,17 +410,56 @@ a {
 }
 
 @media (max-width: 576px) {
+  .hero-section {
+    padding-top: 0px;
+    min-height: 150vh;
+  }
+
+  .hero-content {
+    padding: 0 0.5rem;
+  }
+
   .hero-title {
-    font-size: 2rem;
+    font-size: 1.8rem;
+    margin-bottom: 0.8rem;
+  }
+
+  .hero-subtitle {
+    font-size: 0.9rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .hero-buttons {
+    margin-bottom: 3.5rem;
+  }
+
+  .hero-buttons .btn {
+    max-width: 260px;
+    padding: 10px 20px;
+    font-size: 14px;
+  }
+
+  .hero-bottom-info {
+    bottom: 1.5rem;
+    gap: 1.5rem;
   }
 
   .countdown-timer {
-    font-size: 1rem;
+    font-size: 0.9rem;
   }
 
   .countdown-item {
-    min-width: 40px;
-    padding: 0.4rem 0.6rem;
+    min-width: 35px;
+    padding: 0.3rem 0.5rem;
+  }
+
+  .social-links {
+    gap: 0.8rem;
+  }
+
+  .social-link {
+    width: 28px;
+    height: 28px;
   }
 }
 
@@ -411,7 +485,7 @@ a {
 }
 
 .about-content {
-  padding-right: 50px;
+  /* padding-right: 50px; */
 }
 
 .section-subtitle {
@@ -423,6 +497,7 @@ a {
   color: #2e2320;
   transform: translateY(0);
   transition: all 0.6s ease;
+  max-width: 400px;
 }
 
 .section-title {
@@ -485,7 +560,6 @@ a {
   .about-content {
     padding-right: 0;
     margin-bottom: 3rem;
-    text-align: center;
   }
 
   .section-title {
@@ -505,11 +579,11 @@ a {
   }
 
   .section-title {
-    font-size: 1.8rem;
+    font-size: 1.4rem;
   }
 
   .description-text {
-    font-size: 1rem;
+    font-size: 0.9rem;
   }
 
   .about-image-frame {
@@ -519,7 +593,7 @@ a {
 
 /* Mission Section Styles */
 .mission-section {
-  background: #ed4b1e;
+  background: #eb3300;
   padding: 100px 0 0 0;
   background-image: url("../assets/images/bg-gradient.png");
   background-size: cover;
@@ -532,17 +606,14 @@ a {
 
 .mission-section .container {
   position: relative;
-  z-index: 1;
 }
 
 .mission-title {
   font-weight: 700;
   font-size: 48px;
   leading-trim: NONE;
-
   color: white;
-
-  margin-bottom: 1.5rem;
+  margin-bottom: 1rem;
 }
 
 .mission-subtitle {
@@ -551,9 +622,7 @@ a {
   leading-trim: NONE;
   line-height: 30px;
   letter-spacing: 0%;
-
   color: white;
-
   max-width: 551px;
   margin: 0 auto;
 }
@@ -659,11 +728,15 @@ a {
 /* Responsive Design for Mission Section */
 @media (max-width: 768px) {
   .mission-title {
-    font-size: 2.5rem;
+    font-size: 1.8rem;
   }
 
   .mission-subtitle {
-    font-size: 1.1rem;
+    font-size: 0.9rem;
+  }
+
+  .mission-subtitle span {
+    font-size: 14px;
   }
 
   .feature-card {
@@ -672,27 +745,28 @@ a {
   }
 
   .gospel-title {
-    font-size: 2rem;
-    text-align: center;
+    font-size: 1.5rem;
   }
 
   .gospel-text {
-    text-align: center;
     margin-top: 2rem;
+    font-size: 0.85rem;
   }
 
   .gospel-image {
     height: 200px;
+    object-fit: cover;
+    width: 100%;
   }
 }
 
 @media (max-width: 576px) {
   .mission-section {
-    padding: 60px 0;
+    padding: 60px 0 0 0;
   }
 
   .mission-title {
-    font-size: 2rem;
+    font-size: 1.5rem;
   }
 
   .feature-icon {
@@ -705,7 +779,14 @@ a {
   }
 
   .gospel-title {
-    font-size: 1.8rem;
+    font-size: 1.3rem;
+  }
+
+  .gospel-image {
+    height: 150px;
+    object-fit: cover;
+    width: 100%;
+    border-radius: 10px;
   }
 }
 
@@ -749,7 +830,7 @@ a {
 
 .volunteer-title {
   font-weight: 700;
-  font-size: 35px;
+  font-size: 28px;
   color: #2e2320;
   margin-bottom: 1rem;
   animation: slideInUp 0.8s ease-out;
@@ -887,7 +968,7 @@ a {
 }
 
 .rock-solid-title {
-  font-size: 45px;
+  font-size: 36px;
   font-weight: 800;
   color: #2e2320;
   margin-bottom: 2rem;
@@ -902,7 +983,7 @@ a {
 }
 
 .rock-solid-title .high-light {
-  color: #001d3a;
+  color: #828282;
 }
 
 .rock-solid-button {
@@ -935,11 +1016,11 @@ a {
   }
 
   .volunteer-title {
-    font-size: 2.5rem;
+    font-size: 2rem;
   }
 
   .volunteer-subtitle {
-    font-size: 1rem;
+    font-size: 0.9rem;
   }
 
   .ministry-slider-container {
@@ -955,13 +1036,13 @@ a {
   }
 
   .rock-solid-title {
-    font-size: 2.5rem;
+    font-size: 2rem;
   }
 }
 
 @media (max-width: 576px) {
   .volunteer-title {
-    font-size: 2rem;
+    font-size: 1.6rem;
   }
 
   .volunteer-icon {
@@ -987,7 +1068,7 @@ a {
   }
 
   .rock-solid-title {
-    font-size: 2rem;
+    font-size: 1.5rem;
   }
 }
 
@@ -1030,10 +1111,10 @@ a {
 .share-story-btn {
   background: #eb3300;
   border: none;
-  padding: 10px 12px;
+  padding: 8px 10px;
   font-weight: 500;
   color: white;
-  font-size: 1.1rem;
+  font-size: 0.9rem;
   border-radius: 8px;
   transition: all 0.3s ease;
   text-decoration: none;
@@ -1163,8 +1244,8 @@ a {
   }
 
   .share-story-btn {
-    padding: 0.8rem 1.5rem;
-    font-size: 1rem;
+    padding: 0.6rem 1.2rem;
+    font-size: 0.85rem;
   }
 
   .small-card .testimonial-image {
@@ -1199,6 +1280,15 @@ a {
   .testimonial-title-link {
     margin-top: 0.5rem;
     font-size: 0.85rem;
+  }
+
+  .share-story-btn {
+    padding: 0.5rem 1rem;
+    font-size: 0.8rem;
+  }
+
+  .testimonial-card.small-card {
+    margin-top: 1rem;
   }
 }
 
@@ -1356,6 +1446,12 @@ a {
 /* Footer Bottom */
 .footer-bottom {
   padding: 1rem 0 0.5rem 0;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 0.5rem;
 }
 
 .copyright-text {
