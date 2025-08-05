@@ -171,7 +171,7 @@ a {
     url("../assets/images/hero-bg.png");
   background-size: cover;
   background-position: center;
-  background-attachment: fixed;
+  background-repeat: no-repeat;
   z-index: -2;
 }
 
@@ -380,6 +380,14 @@ a {
     padding-top: 120px;
     min-height: 140vh;
     position: relative;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+  }
+
+  .hero-background {
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    will-change: transform;
   }
 
   .hero-content {
@@ -442,6 +450,20 @@ a {
 
   .logo-text {
     display: none;
+  }
+}
+
+/* iOS Safari specific fixes */
+@supports (-webkit-touch-callout: none) {
+  .hero-background {
+    background-attachment: scroll !important;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+  }
+
+  .hero-section {
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
   }
 }
 
