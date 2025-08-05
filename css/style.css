@@ -358,6 +358,26 @@ a {
     display: none;
   }
 
+  .create-account {
+    text-align: center;
+    display: block;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .navbar-nav .nav-item {
+    background: rgba(0, 0, 0, 0.8);
+    backdrop-filter: blur(10px);
+    border-radius: 8px;
+    margin: 5px 0;
+    padding: 8px 12px;
+  }
+
+  .navbar-nav .nav-link {
+    text-align: center;
+    padding: 8px 16px;
+  }
+
   .hero-section {
     padding-top: 120px;
     min-height: 140vh;
@@ -1035,7 +1055,7 @@ a {
   }
 
   .swiper-slide img {
-    height: 200px;
+    height: 340px;
   }
 
   .rock-solid-title {
@@ -1241,11 +1261,11 @@ a {
   }
 
   .large-card .testimonial-image {
-    height: 200px;
+    height: 250px;
   }
 
   .small-card .testimonial-image {
-    height: 120px;
+    height: 250px;
   }
 
   .testimonial-title-link {
