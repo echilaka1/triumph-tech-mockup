@@ -615,7 +615,7 @@ a {
 .mission-section {
   background: #eb3300;
   padding: 100px 0 0 0;
-  background-image: url("../assets/images/bg-gradient.png");
+  background-image: url("../assets/images/gradient.svg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -623,6 +623,50 @@ a {
   position: relative;
   /* transform: translate(-4%, 23%); */
   overflow: visible;
+}
+
+.mission-curve {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.mission-curve img {
+  width: 100px;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.center-arrow {
+  position: absolute;
+  top: 5px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  animation: arrowBounce 2s ease-in-out infinite;
+  cursor: pointer;
+  text-decoration: none;
+  transition: transform 0.3s ease;
+}
+
+.center-arrow:hover {
+  transform: translate(-50%, -50%) scale(1.1);
+}
+
+.center-arrow img {
+  width: 15px;
+}
+
+@keyframes arrowBounce {
+  0%,
+  100% {
+    transform: translate(-50%, -50%) translateY(0);
+  }
+  50% {
+    transform: translate(-50%, -50%) translateY(10px);
+  }
 }
 
 .mission-section .container {
