@@ -142,6 +142,15 @@ a {
   font-size: 14px;
   leading-trim: NONE;
   letter-spacing: 0%;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.create-account:hover {
+  color: #f0f0f0;
+  transform: translateY(-1px);
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
 }
 
 /* Hero Section Styles */
@@ -267,19 +276,14 @@ a {
 }
 
 .countdown-label {
-  /* opacity: 0.8; */
-
   font-weight: 400;
-  font-size: 20px;
-  leading-trim: NONE;
-  line-height: 34.5px;
-  letter-spacing: 0%;
+  font-size: 18px;
 }
 
 .countdown-timer {
   display: flex;
   justify-content: center;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   font-weight: bold;
 }
 
@@ -297,8 +301,8 @@ a {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  width: 30px;
-  height: 30px;
+  width: 25px;
+  height: 25px;
   text-decoration: none;
   transition: all 0.3s ease;
 }
@@ -963,6 +967,20 @@ a {
   background-image: radial-gradient(circle, #e9ecef 1px, transparent 1px);
   background-size: 20px 20px;
   opacity: 0.3;
+}
+
+.vertical-line {
+  position: absolute;
+  right: 0;
+  bottom: -50px;
+  z-index: 99;
+}
+
+.horizontal-line {
+  position: absolute;
+  left: 0;
+  top: 50px;
+  z-index: 99;
 }
 
 .rock-solid-content {
