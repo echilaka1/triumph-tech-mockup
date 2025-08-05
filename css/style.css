@@ -612,17 +612,37 @@ a {
 }
 
 /* Mission Section Styles */
-.mission-section {
-  background: #eb3300;
+/* .mission-section {
   padding: 100px 0 0 0;
-  background-image: url("../assets/images/gradient.svg");
+  background: linear-gradient(rgba(235, 51, 0, 0.93), rgba(235, 51, 0, 0.93)),url("../assets/images/bg-gradient.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   border-radius: 20px;
   position: relative;
-  /* transform: translate(-4%, 23%); */
   overflow: visible;
+} */
+
+.mission-section {
+  background-color: #ed4314;
+  position: relative;
+  padding: 100px 0 0 0;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.mission-section::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: url("../assets/images/gradient.svg") center / cover no-repeat;
+  opacity: 0.3;
+  z-index: 0;
+}
+
+.mission-section > * {
+  position: relative;
+  z-index: 1;
 }
 
 .mission-curve {
