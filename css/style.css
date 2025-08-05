@@ -612,16 +612,6 @@ a {
 }
 
 /* Mission Section Styles */
-/* .mission-section {
-  padding: 100px 0 0 0;
-  background: linear-gradient(rgba(235, 51, 0, 0.93), rgba(235, 51, 0, 0.93)),url("../assets/images/bg-gradient.png");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  border-radius: 20px;
-  position: relative;
-  overflow: visible;
-} */
 
 .mission-section {
   background-color: #ed4314;
@@ -635,7 +625,7 @@ a {
   content: "";
   position: absolute;
   inset: 0;
-  background: url("../assets/images/gradient.svg") center / cover no-repeat;
+  background: url("../assets/images/bg-gradient.png") center / cover no-repeat;
   opacity: 0.3;
   z-index: 0;
 }
