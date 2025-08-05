@@ -100,17 +100,12 @@ a {
 }
 
 .navbar-nav .nav-link:hover {
-  color: white !important;
+  color: #ed4b1e !important;
   transform: translateY(-2px);
 }
 
 .navbar-nav .nav-link.btn-secondary-nav:hover::after {
   display: none;
-}
-
-.navbar-nav .nav-link.btn-outline-light:hover {
-  background-color: white;
-  color: #333 !important;
 }
 
 .navbar-nav .nav-item .btn-secondary-nav {
@@ -123,6 +118,7 @@ a {
 
 .navbar-nav .nav-item .btn-secondary-nav:hover {
   background-color: #5a6268;
+  color: white !important;
   border-color: #545b62;
 }
 
@@ -148,7 +144,7 @@ a {
 }
 
 .create-account:hover {
-  color: #f0f0f0;
+  color: #ed4b1e;
   transform: translateY(-1px);
   text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
 }
@@ -177,7 +173,6 @@ a {
   background-position: center;
   background-attachment: fixed;
   z-index: -2;
-  /* border-radius: 40px; */
 }
 
 .hero-overlay {
@@ -232,11 +227,10 @@ a {
   position: relative;
   font-weight: 700;
   font-size: 16px;
-  leading-trim: NONE;
   letter-spacing: 0%;
   /* opacity: 1; */
   border-radius: 8px;
-  padding: 10px 16px;
+  padding: 8px 10px;
 }
 
 .hero-buttons .btn-new-btn {
@@ -344,7 +338,7 @@ a {
   left: 50%;
   width: 0;
   height: 2px;
-  background: white;
+  background: #ed4b1e;
   transition: all 0.3s ease;
   transform: translateX(-50%);
 }
@@ -505,18 +499,6 @@ a {
   }
 }
 
-/* Loading animation */
-.loading {
-  opacity: 0;
-  transform: translateY(20px);
-  transition: all 0.6s ease;
-}
-
-.loading.loaded {
-  opacity: 1;
-  transform: translateY(0);
-}
-
 /* About Section Styles */
 .about-section {
   padding: 100px 0;
@@ -524,10 +506,6 @@ a {
   position: relative;
   display: block;
   min-height: 400px;
-}
-
-.about-content {
-  /* padding-right: 50px; */
 }
 
 .section-subtitle {
@@ -643,6 +621,7 @@ a {
   background-repeat: no-repeat;
   border-radius: 20px;
   position: relative;
+  /* transform: translate(-4%, 23%); */
   overflow: visible;
 }
 

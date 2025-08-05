@@ -15,7 +15,7 @@ This project demonstrates a modern church website with a dynamic hero section, a
 - **Swiper.js**: Carousel/slider library
 - **Animate.css**: Animation library for enhanced effects
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 triumph-mockup/

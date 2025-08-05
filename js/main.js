@@ -1,8 +1,8 @@
 document.addEventListener("DOMContentLoaded", function () {
-  // Initialize all components
   initCountdownTimer();
   initAnimations();
   initNavbarEffects();
+  initSwiper();
 
   // Countdown Timer
   function initCountdownTimer() {
@@ -111,23 +111,26 @@ document.addEventListener("DOMContentLoaded", function () {
     // Smooth navbar transitions
     navbar.style.transition = "all 0.3s ease";
   }
-});
 
-var swiper = new Swiper(".swiper-container", {
-  slidesPerView: "auto",
-  spaceBetween: 16,
-  grabCursor: true,
-  loop: true,
-  autoplay: {
-    delay: 2000,
-    disableOnInteraction: false,
-    reverseDirection: true,
-  },
-  breakpoints: {
-    320: { slidesPerView: 1 },
-    480: { slidesPerView: 1.5 },
-    640: { slidesPerView: 2 },
-    768: { slidesPerView: 3 },
-    1024: { slidesPerView: 5 },
-  },
+  // Swiper Initialization
+  function initSwiper() {
+    const swiper = new Swiper(".swiper-container", {
+      slidesPerView: "auto",
+      spaceBetween: 16,
+      grabCursor: true,
+      loop: true,
+      autoplay: {
+        delay: 2000,
+        disableOnInteraction: false,
+        reverseDirection: true,
+      },
+      breakpoints: {
+        320: { slidesPerView: 1 },
+        480: { slidesPerView: 1.5 },
+        640: { slidesPerView: 2 },
+        768: { slidesPerView: 3 },
+        1024: { slidesPerView: 5 },
+      },
+    });
+  }
 });
