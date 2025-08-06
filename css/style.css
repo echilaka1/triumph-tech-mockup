@@ -48,6 +48,8 @@ a {
   background: rgba(0, 0, 0, 0.9);
   backdrop-filter: blur(10px);
   box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  padding: 14px 0 24px 0;
 }
 
 .navbar-brand {
@@ -330,6 +332,17 @@ a {
 }
 
 @media (max-width: 768px) {
+  body.navbar-open {
+    overflow: hidden;
+  }
+
+  .navbar-collapse.show {
+    background: #000;
+    border-radius: 8px;
+    padding: 10px;
+    margin-top: 10px;
+  }
+
   .overlay-navbg::before {
     display: none;
   }
@@ -902,7 +915,7 @@ html {
     height: 150px;
     object-fit: cover;
     width: 100%;
-    border-radius: 10px;
+    border-radius: 10px 10px 0 0;
   }
 }
 
@@ -1381,7 +1394,6 @@ html {
   margin-top: 2rem;
 }
 
-/* Top Buttons */
 .footer-top-buttons {
   padding: 1rem 0 0 0;
 }

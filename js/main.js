@@ -85,6 +85,7 @@ document.addEventListener("DOMContentLoaded", function () {
   // Navbar Effects
   function initNavbarEffects() {
     const navbar = document.querySelector(".navbar");
+    const navbarCollapse = document.querySelector(".navbar-collapse");
     let lastScrollTop = 0;
 
     window.addEventListener("scroll", () => {
@@ -110,6 +111,29 @@ document.addEventListener("DOMContentLoaded", function () {
 
     // Smooth navbar transitions
     navbar.style.transition = "all 0.3s ease";
+
+    // Prevent body scroll when navbar is open on mobile
+    if (navbarCollapse) {
+      const observer = new MutationObserver((mutations) => {
+        mutations.forEach((mutation) => {
+          if (
+            mutation.type === "attributes" &&
+            mutation.attributeName === "class"
+          ) {
+            if (navbarCollapse.classList.contains("show")) {
+              document.body.classList.add("navbar-open");
+            } else {
+              document.body.classList.remove("navbar-open");
+            }
+          }
+        });
+      });
+
+      observer.observe(navbarCollapse, {
+        attributes: true,
+        attributeFilter: ["class"],
+      });
+    }
   }
 
   // Swiper Initialization
