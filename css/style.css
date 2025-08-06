@@ -449,6 +449,36 @@ a {
   }
 }
 
+/* Tablet-specific styles for iPad Pro and similar devices */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .hamburger-icon {
+    display: none !important;
+  }
+
+  .navbar-nav .nav-link {
+    font-size: 13px;
+    margin: 0 3px;
+  }
+
+  .navbar-nav .nav-item .btn-secondary-nav {
+    padding: 6px 16px;
+    font-size: 13px;
+  }
+
+  .overlay-navbg::before {
+    width: 600px;
+    height: 55px;
+  }
+
+  .create-account {
+    font-size: 13px;
+  }
+
+  .navbar-brand {
+    font-size: 14px;
+  }
+}
+
 @media (max-width: 576px) {
   .hero-section {
     padding-top: 0px;
@@ -720,7 +750,7 @@ html {
   text-align: center;
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
   transition: all 0.3s ease;
-  height: 260px;
+  height: 220px;
 }
 
 .feature-card:hover {
@@ -822,6 +852,7 @@ html {
   .feature-card {
     padding: 2rem 1.5rem;
     margin-bottom: 1.5rem;
+    height: 240px;
   }
 
   .gospel-title {
@@ -885,7 +916,7 @@ html {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: 0 auto 2rem;
+  margin: 0 auto 1rem;
   position: relative;
   animation: heartbeat 2s infinite;
 }
@@ -1031,7 +1062,7 @@ html {
   margin-bottom: 2rem;
   max-width: 660px;
   margin: auto;
-  line-height: 1.2;
+  line-height: 1.1;
   animation: slideInUp 0.8s ease-out;
 }
 
@@ -1438,7 +1469,6 @@ html {
   transform: translateY(-3px);
 }
 
-/* Footer Links */
 .footer-links,
 .footer-contact-links {
   margin-bottom: 2rem;
@@ -1490,7 +1520,6 @@ html {
   width: 100%;
 }
 
-/* Footer Bottom */
 .footer-bottom {
   padding: 1rem 0 0.5rem 0;
   gap: 0.5rem;
@@ -1610,5 +1639,15 @@ html {
   .social-icon {
     width: 35px;
     height: 35px;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .footer-section-title {
+    font-size: 0.6rem;
+  }
+
+  .footer-link-list a {
+    font-size: 0.5rem;
   }
 }
