@@ -211,10 +211,10 @@ a {
 .hero-buttons .btn {
   transition: all 0.3s ease;
   position: relative;
-  font-weight: 700;
-  font-size: 16px;
+  font-weight: 600;
+  font-size: 0.9rem;
   border-radius: 8px;
-  padding: 8px 10px;
+  padding: 8px 16px;
 }
 
 .hero-buttons .btn-new-btn {
@@ -1048,15 +1048,18 @@ html {
   left: 0;
   right: 0;
   bottom: 0;
-  background-image: radial-gradient(circle, #e9ecef 1px, transparent 1px);
-  background-size: 20px 20px;
-  opacity: 0.3;
+  background-image: url("../assets/images/rock-bg.png");
+  background-size: cover;
+  background-position: center 110%;
+  background-repeat: no-repeat;
+  opacity: 0.12;
+  z-index: 0;
 }
 
 .vertical-line {
   position: absolute;
   right: 0;
-  bottom: -50px;
+  top: 30%;
   z-index: 99;
 }
 
@@ -1097,11 +1100,8 @@ html {
 
 .rock-solid-button .btn {
   transition: all 0.3s ease;
-  position: relative;
-  font-weight: 700;
-  font-size: 16px;
-  leading-trim: NONE;
-  letter-spacing: 0%;
+  font-weight: 500;
+  font-size: 0.9rem;
   border-radius: 8px;
   padding: 10px 16px;
   background: #2e2320;
@@ -1291,11 +1291,11 @@ html {
 } */
 
 .large-card .testimonial-image {
-  height: 350px;
+  height: 425px;
 }
 
 .small-card .testimonial-image {
-  height: 142px;
+  height: 180px;
 }
 
 .small-card:nth-child(3) {
